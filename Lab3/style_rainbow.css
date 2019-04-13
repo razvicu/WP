@@ -1,0 +1,38 @@
+.mainDiv {
+    position: relative;
+    height: 300px;
+}
+
+.rainbow1 {
+    background: linear-gradient(78deg, red 5%, transparent 8%),
+                linear-gradient(69deg, orange 10%, transparent 14%);
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    z-index: 3;
+}
+
+.rainbow2 {
+    background: linear-gradient(60deg, yellow 15%, transparent 17%),
+                linear-gradient(51deg, green 20%, transparent 22%);
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+}
+
+.rainbow3 {
+    background: linear-gradient(43deg, blue 25%, transparent 27%),
+                linear-gradient(35deg, indigo 30%, transparent 32%);
+    height: 100%;
+    width: 25%;
+    position: absolute;
+    z-index: 1;
+}
+
+.rainbow4 {
+    background: linear-gradient(28deg, violet 35%, transparent 37%);
+    height: 100%;
+    width: 25%;
+    position: absolute;
+}

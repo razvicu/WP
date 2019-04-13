@@ -1,0 +1,44 @@
+body {
+	margin: 0;
+}
+
+.mainDiv {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.slides {
+    display: block;
+    width: 9600px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+}
+
+.slide {
+    float: left;
+    list-style-type: none;
+    width: 1920px;
+    height: 1080px;
+}
+
+.slide1 {
+    background: red;
+}
+
+.slide2 {
+    background: aqua;
+}
+
+.slide3 {
+    background: purple;
+}
+
+.slide4 {
+    background: yellow;
+}

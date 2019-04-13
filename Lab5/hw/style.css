@@ -1,0 +1,48 @@
+li {
+    margin: 10px;
+    list-style-type: none;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.dropdown-menu, .sub-dropdown-menu {
+    display: none;
+}
+
+.menu {
+    margin: 0 auto;
+}
+
+.mainwrapper {
+    display: flex;
+}
+
+.dropdownablewrapper {
+    margin-top: 10px;
+    width: 250px;
+    min-height: 50px;
+    background-color: lightblue;
+}
+
+.maindropdownablewrapper {
+    width: 300px;
+    min-height: 50px;
+    margin: 10px;
+    background-color: coral;
+    text-align: center;
+}
+
+.menu li {
+    position: relative;
+    
+}
+
+.menu li > ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+li ul li {
+    background-color: yellow;
+}

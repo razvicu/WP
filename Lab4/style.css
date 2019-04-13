@@ -1,0 +1,209 @@
+.sm {
+  max-width: 5%;
+  padding: 0 2%;
+}
+
+.md {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  margin-left: 5%;
+  font-size: 0.8em;
+}
+
+pre em {
+  font-size: 2em;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+div h2 {
+  margin-top: 3.5%;
+}
+
+.searchContainer {
+  display: inline-block;
+}
+
+.mainDiv {
+  display: block;
+  align-items: flex-start;
+  min-width: 500px;
+  width: auto !important;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.courseContent {
+  min-width: 50%;
+  background-color: #404040;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding-left: 10%;
+  margin: auto;
+}
+
+.courseData {
+  right: 20%;
+  position: fixed;
+  top: 35%;
+  border: 2px solid white;
+  width: auto;
+  max-width: 18%;
+  margin: auto;
+}
+
+.courseDetails {
+  padding-top: .5%;
+  margin-bottom: 3.5%;
+}
+
+.courseData p {
+  display: flex;
+  justify-content: center;
+}
+
+.courseData button {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.userPreferences {
+  position: absolute;
+  right: 18%;
+  top: 5%;
+  overflow: auto;
+}
+
+.white {
+  color: white;
+}
+
+.fa-star {
+  color: #ffff00;
+}
+
+.courseData ul p {
+  display: inline;
+}
+
+pre {
+  font-size: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+.courseInfo {
+  max-width: 50%;
+  margin-left: 10%;
+}
+
+.courseInfo ul {
+  columns: 2;
+}
+
+.courseInfo li {
+  margin: 0 0 1em 0;
+}
+
+.squareButton {
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 12px 26px;
+}
+
+.redBtn {
+  background-color: #ff3232;
+  color: white;
+}
+
+.whiteBtn {
+  background-color: white;
+  color: gray;
+}
+
+.bordered {
+  border: 1px solid black;
+}
+
+.navbar {
+  height: 9%;
+  display:flex;
+  justify-content:center;
+}
+
+.navbar li {
+  padding: 0 2%;
+  color: grey;
+}
+
+.navbar button[type="submit"] {
+  margin-left: -20px;
+  padding: 10px;
+  background: #f1f1f1;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar input[type="text"] {
+  background: #f1f1f1;
+  padding: 10px;
+  border: none;
+}
+
+.navbar button[type="submit"]:hover {
+  background: #ff3232;
+  color: white;
+}
+
+.sections-toggle {
+  margin-left: 25%;
+}
+
+.dib {
+  margin-left: 1%;
+}
+
+.curriculum-header-length {
+  margin-left: 1%;
+}
+
+.contentExtended {
+  margin-left: 10%;
+}
+
+.chapters {
+  height: 2em;
+  background-color: #e6e6e6;
+  top: 50%;
+  max-width: 55%;
+  margin-top: 2px;
+  margin-left: 2%;
+  position: relative;
+}
+
+.section-header-length {
+  position: absolute;
+  right: 0;
+}
+
+.num-items-in-section {
+  position: absolute;
+  right: 15%;
+}

@@ -1,0 +1,36 @@
+.headerDiv {
+  width: 100%;
+  background: red;
+  text-align: center;
+}
+
+.flexer {
+  display: flex;
+  min-height: 90%;
+}
+
+.leftDiv {
+  width: 20%;
+  background: #0ff14f;
+}
+
+.rightDiv {
+  width: 70%;
+  background: green;
+}
+
+.rightDivLeft {
+  width: 45%;
+  min-height: 90%;
+  background: coral;
+}
+
+.rightDivRight {
+  width: 45%;
+  min-height: 90%;
+  background: yellow;
+}
+
+.centered {
+  align-content: center;
+}
