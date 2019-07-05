@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="somediv">Content</div>
+    <div id="rectangle"></div>
+    <table class="toSelect" border="1">
+        <tr>
+            <th>C1</th>
+            <th>C2</th>
+            <th>C3</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Ion</td>
+            <td>Johan</td>
+        </tr>
+    </table>
+    <table class="notSelect" border="1">
+            <tr>
+                <th>C1</th>
+                <th>C2</th>
+            </tr>
+            <tr>
+                <td>Coffee</td>
+                <td>Tea</td>
+            </tr>
+    </table>
+    <table class="toSelect" border="1">
+            <tr>
+                <th>C1</th>
+                <th>C2</th>
+                <th>C3</th>
+                <th>C4</th>
+                <th>C5</th>
+            </tr>
+            <tr>
+                <td>Mercedes</td>
+                <td>Volvo</td>
+                <td>Audi</td>
+                <td>Da</td>
+                <td>Nu vedi</td>
+            </tr>
+    </table>
+    <div id="concat"></div>
+</body>
+</html>
+<script>
+    let tables = document.getElementsByTagName("table");
+    finalTables = [];
+    maxCols = 0;
+    for (let i = 0; i < tables.length; ++i) 
+        if ( tables[i].classList.contains("toSelect") )
+            finalTables.push(tables[i]);
+
+    for (let i = 0; i < finalTables.length; ++i )
+        maxCols = Math.max(maxCols, (finalTables[i].rows[0].cells.length));
+    
+    let table = document.createElement("table");
+    let tr = document.createElement("tr");
+    thArr = [];
+    for (i = 1; i <= maxCols; ++i) {
+        let elem = document.createElement("th");
+        elem.textContent = "C" + i;
+        tr.appendChild(elem);
+    }
+    table.append(tr);
+
+    tr = document.createElement("tr");
+
+    for (i = 0; i < finalTables.length; ++i)
+        for (j = 0; j < finalTables[i].rows.length - 1; j++) {
+            tr = document.createElement("tr");
+            console.log(finalTables[i].rows[j+1].children[0].textContent);
+            for (let k = 0; k < finalTables[i].rows[j+1].children.length; ++k) {
+                let elem = document.createElement("td");
+                elem.textContent = finalTables[i].rows[j+1].children[k].textContent;
+                tr.appendChild(elem);
+            }
+            table.append(tr);
+        }
+
+
+    let show = document.getElementById("concat");
+    show.append(table);
+
+</script>

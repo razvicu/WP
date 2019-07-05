@@ -1,0 +1,30 @@
+#searchBar {
+    margin-bottom: 20px;
+}
+
+#mainContainer {
+    margin-top: 30px;
+}
+
+#dynButton {
+    display: block;
+    margin: 0 auto;
+}
+
+td {
+    vertical-align: middle;
+}
+
+a {
+    color: aliceblue !important;
+    margin-left: 5px;
+}
+
+.floated {
+    margin-right: 5px;
+    float: right;
+}
+
+#filterSelect {
+    margin-right: 10px;
+}

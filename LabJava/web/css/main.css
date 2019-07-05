@@ -1,0 +1,16 @@
+button {
+    margin-top: 10px;
+}
+
+#photos, .card {
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.container {
+    width: 70%;
+}
+
+.filter {
+    margin-left: 50px;
+}

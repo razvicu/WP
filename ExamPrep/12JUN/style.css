@@ -1,0 +1,41 @@
+#somediv {
+    width: 100px;
+    height: 150px;
+    background: linear-gradient(transparent, green, red);
+    border-radius: 20px;
+    text-align: center;   
+}
+
+@keyframes example {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+
+    25% {
+        width: 200px;
+        height: 100px;
+        background: red;
+        border-radius: 100px / 50px;
+    }
+
+    50% {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%;
+    }
+
+    to {
+        width: 100px;
+        height: 100px;
+        background: blue;
+    }
+}
+
+#rectangle {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

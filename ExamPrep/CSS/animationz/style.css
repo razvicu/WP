@@ -1,0 +1,63 @@
+body {
+    background-color: #333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation-name: myanimation;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+ 
+@keyframes myanimation {
+    0% {
+        background-color: white;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+    }
+    25% {
+        background-color: red;
+        left: 300px;
+        top: 0;
+        border-radius: 50% 0 0 0;
+    }
+    50% {
+        background-color: green;
+        left: 300px;
+        top: 300px;
+        border-radius: 50% 50% 0 0;
+    }
+    75% {
+        background-color: blue;
+        left: 0;
+        top: 300px;
+        border-radius: 50% 50% 50% 0;
+    }
+    100% {
+        background-color: white;
+        left: 0;
+        top: 0;
+        border-radius: 50% 50% 50% 50%;
+    }
+}
+
+.box2 {
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    top: 200px;
+    transition-property: background, border-radius, transform;
+    transition-duration: 1s;
+}
+
+.box2:hover {
+    background: red;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}

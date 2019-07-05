@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Mr juve   play aj</p>
+    <p>Un paragraf  magnific</p>
+    <p>wefibefwiubfweuibfewui</p>
+    <ul id="myList">
+        <li>Apples</li>
+        <li id="pears">Pears</li>
+        <li>Bananas</li>
+    </ul>
+</body>
+</html>
+<script>
+    let ps = document.getElementsByTagName("p");
+    arr = [];
+    for (i = 0; i < ps.length; ++i) {
+        wlen = ps[i].textContent.split(/\s+/).length;
+        chlen = ps[i].textContent.replace(/\s/g, "").length;
+        arr.push([ps[i], chlen/wlen]);
+    }
+    arr.sort((a, b) => {
+        return a[1] < b[1] ? 1 : -1 ;
+    })
+    let bd = document.getElementsByTagName("body")[0];
+    for (i = 0; i < ps.length; ++i)
+        bd.appendChild(arr[i][0]);
+</script>
+
+<script>
+    const myList = document.getElementById("myList");
+    const pearsItem = document.getElementById("pears");
+
+    const oranges = document.createElement("li");
+    oranges.textContent = "Oranges";
+    
+    myList.insertBefore(oranges, pearsItem);
+
+</script>
+

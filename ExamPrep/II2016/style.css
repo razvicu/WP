@@ -1,0 +1,16 @@
+body {
+    height: 100%;
+}
+
+#line {
+    height: 50%;
+    width: 10px;
+    background: linear-gradient(blue, white, blue, white);
+}
+
+.dynDiv {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
